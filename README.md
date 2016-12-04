@@ -1,2 +1,2 @@
 # pemrogramanweb
-Kumpulan Tugas Mata KuLiah Pemrograman Web
+Kumpulan Tugas Mata Kuliah Pemrograman Web
