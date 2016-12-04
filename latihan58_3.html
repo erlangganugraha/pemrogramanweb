@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menghitung Luas</title>
+</head>
+<body>
+	<h3>1. Menghitung Luas Segitiga :</h3>
+	<p id="hasilSegitiga"></p>
+	<br>
+
+	<h3>1. Menghitung Luas Lingkaran :</h3>
+	<p id="hasilLingkaran"></p>
+	<br>
+
+	<h3>1. Menghitung Luas Persegi Panjang :</h3>
+	<p id="hasilPersegi"></p>
+	<br>
+</body>
+<script type="text/javascript">
+	
+	var hasilSegitiga, hasilPersegi, hasilLingkaran;
+
+	//Untuk Segitiga 1/2*a*t
+	var alas = 10;
+	var tinggi = 5;
+	hasilSegitiga = 1/2*alas*tinggi;
+
+	//menampilkan di <p> dengan id
+	document.getElementById("hasilSegitiga").innerHTML += "Alas : "+alas;
+	document.getElementById("hasilSegitiga").innerHTML += "<br/>";
+	document.getElementById("hasilSegitiga").innerHTML += "Tinggi : "+tinggi;
+	document.getElementById("hasilSegitiga").innerHTML += "<br/>";
+	document.getElementById("hasilSegitiga").innerHTML += "Hasil Luas : "+hasilSegitiga;
+
+	//Untuk Lingkaran 3.14*R^
+	var vi = 3.14;
+	var jari2 = 4;
+	hasilLingkaran = vi*(jari2*jari2);
+
+	//menampilkan di <p> dengan id
+	document.getElementById("hasilLingkaran").innerHTML += "Jari-jari : "+jari2;
+	document.getElementById("hasilLingkaran").innerHTML += "<br/>";
+	document.getElementById("hasilLingkaran").innerHTML += "Hasil Luas : "+hasilLingkaran;
+
+	//Untuk Persegi p*l;
+	var panjang = 10;
+	var lebar = 5;
+	hasilPersegi = panjang*lebar;
+
+	//menampilkan di <p> dengan id
+	document.getElementById("hasilPersegi").innerHTML += "Panjang : "+panjang;
+	document.getElementById("hasilPersegi").innerHTML += "<br/>";
+	document.getElementById("hasilPersegi").innerHTML += "Lebar : "+lebar;
+	document.getElementById("hasilPersegi").innerHTML += "<br/>";
+	document.getElementById("hasilPersegi").innerHTML += "Hasil Luas : "+hasilPersegi;
+</script>
+</html>

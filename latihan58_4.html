@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar Belanja</title>
+</head>
+<body>
+  <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
+.tg td{font-family:Arial, sans-serif;font-size:16px;padding:20px 4px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
+.tg th{font-family:Arial, sans-serif;font-size:20px;font-weight:normal;padding:20px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;border-top-width:1px;border-bottom-width:1px;}
+</style>
+
+  <h3>Daftar Belanja</h3>
+  <table class="tg">
+    <tr>
+      <th class="tg-nama">Nama Barang</th>
+      <th class="tg-">Harga</th>
+      <th class="tg-">Jumlah</th>
+      <th class="tg-">Total</th>
+    </tr>
+    <tr>
+      <td class="tg-nama">1. Sabun Mandi</td>
+      <td class="tg-jumlah">10</td>
+      <td class="tg-harga">5500</td>
+      <td class="tg-total"></td>
+    </tr>
+    <tr>
+      <td class="tg-nama">2. Pasta Gigi</td>
+      <td class="tg-jumlah">2</td>
+      <td class="tg-harga">15000</td>
+      <td class="tg-total"></td>
+    </tr>
+    <tr>
+      <td class="tg-nama">3. Susu Dancow</td>
+      <td class="tg-jumlah">1</td>
+      <td class="tg-harga">56000</td>
+      <td class="tg-total"></td>
+    </tr>
+    <tr>
+      <td class="tg-nama">4. Gula</td>
+      <td class="tg-jumlah">2</td>
+      <td class="tg-harga">2300</td>
+      <td class="tg-total"></td>
+    </tr>
+    <tr>
+      <td class="tg-nama">5. Kopi</td>
+      <td class="tg-jumlah">3</td>
+      <td class="tg-harga">12500</td>
+      <td class="tg-total"></td>
+    </tr>
+    <tr>
+      <td class="tg-nama">6. Roti</td>
+      <td class="tg-jumlah">2</td>
+      <td class="tg-harga">20000</td>
+      <td class="tg-total"></td>
+    </tr>
+    <tr>
+      <td class="tg-nama">7. Kecap</td>
+      <td class="tg-jumlah">3</td>
+      <td class="tg-harga">11500</td>
+      <td class="tg-total"></td>
+    </tr>
+
+    <tr>
+      <td colspan="3">Total Belanja :</td>
+      <td id="totalAll">asas</td>
+    </tr>
+  </table>
+
+  <script type="text/javascript">
+    
+    var harga = document.getElementsByClassName("tg-harga");
+    var jumlah = document.getElementsByClassName("tg-jumlah");
+    var total = document.getElementsByClassName("tg-total");
+    var hslTotal = document.getElementById("totalAll");
+    var totalAll = 0;
+    for (i=0; i<harga.length; i++) {
+        total[i].innerHTML = harga[i].innerHTML * jumlah[i].innerHTML;
+        totalAll = totalAll + parseInt(total[i].innerHTML);
+    }
+
+    document.getElementById("totalAll").innerHTML = totalAll;
+  </script>
+</body>
+</html>
